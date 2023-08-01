@@ -41,6 +41,11 @@ app.use('/premium', premiumFeatureRoutes);
 
 app.use('/password', passwordRoute);
 
+app.use((req,res) => {
+    console.log('url is', req.url)
+    res.sendFile(path.join(__dirname, `public/${req.url}`));
+})
+
 User.hasMany(Expense);
 Expense.belongsTo(User);
 
