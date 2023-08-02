@@ -36,7 +36,7 @@ const forgotpassword = async(req,res,next) => {
                     sender,
                     to: receivers,
                     subject: 'Forgot Password Testing',
-                    htmlContent: `<a href="http://localhost:3000/password/resetpassword/${id}">Reset password </a>`,
+                    htmlContent: `<a href="http://13.53.190.177:3000/password/resetpassword/${id}">Reset password </a>`,
                 }
             try {
                 const sentEmail = await tranEmailApi.sendTransacEmail(msg);

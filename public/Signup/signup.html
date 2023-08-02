@@ -41,7 +41,7 @@
                     email,
                     password
                 };
-                const response = await axios.post("http://localhost:3000/user/signup", obj)
+                const response = await axios.post("http://13.53.190.177:3000/user/signup", obj)
                 if(response.status === 201) {
                     // redirect user to login page - change on successful login
                     window.location.href = '../Login/login.html'

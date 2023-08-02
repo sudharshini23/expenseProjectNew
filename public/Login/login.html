@@ -34,7 +34,7 @@
                 email,
                 password
             };
-            await axios.post("http://localhost:3000/user/login", objlogin)
+            await axios.post("http://13.53.190.177:3000/user/login", objlogin)
             .then(response => {
                 alert(response.data.message);
                 console.log(response.data)
@@ -60,7 +60,7 @@
             //         email,
             //         password
             //     };
-            //     const response = await axios.post("http://localhost:3000/user/login", obj)
+            //     const response = await axios.post("http://13.53.190.177:3000/user/login", obj)
             //     if(response.status === 200) {
             //         alert(response.data.message);
             //     }
